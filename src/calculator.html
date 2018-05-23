@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vanilla JS RPN (Postfix) Calculator</title>
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+</head>
+
+<body>
+    <div id="calculator" class="">
+        <section class="container-screen">
+            <span class="font-normal" id="screen" data-value="0" data-state="0"></span>
+        </section>
+        <section class="container-numpad">
+            <button id="7" class="btn" data-key="103" data-value="7">7</button>
+            <button id="8" class="btn" data-key="104" data-value="8">8</button>
+            <button id="9" class="btn" data-key="105" data-value="9">9</button>
+            <button id="divide" class="btn divide" data-key="111" data-value="/">÷</button>
+
+            <button id="4" class="btn" data-key="100" data-value="4">4</button>
+            <button id="5" class="btn" data-key="101" data-value="5">5</button>
+            <button id="6" class="btn" data-key="102" data-value="6">6</button>
+            <button id="multiply" class="btn multiply" data-key="106" data-value="*">x</button>
+
+
+            <button id="1" class="btn" data-key="97" data-value="1">1</button>
+            <button id="2" class="btn" data-key="98" data-value="2">2</button>
+            <button id="3" class="btn" data-key="99" data-value="3">3</button>
+            <button id="subtract" class="btn subtract" data-key="109" data-value="-">-</button>
+
+
+            <button id="undo" class="btn" data-key="96" data-value="00">&laquo;</button>
+            <button id="0" class="btn" data-key="96" data-value="0">0</button>
+            <button id="period" class="btn" data-key="110" data-value=".">.</button>
+            <button id="add" class="btn add" data-key="107" data-value="+">+</button>
+
+            <button id="reset" class="btn silver clear ac" data-key="46" data-value="reset">AC</button>
+            <button id="equal" class="btn equals" data-key="13" data-value="=">&crarr;</button>
+        </section>
+
+    </div>
+    <script src="mousetrap.min.js"></script>
+    <script src="mathsolver.js"></script>
+    <script src="fcc-calculator.js"></script>
+    <!-- <script src="sandbox3.js"></script> -->
+</body>
+
+</html>
